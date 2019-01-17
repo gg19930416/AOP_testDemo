@@ -15,6 +15,7 @@
 		243325B321F0D0C500EE2932 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 243325B221F0D0C500EE2932 /* main.m */; };
 		243325BD21F0D0C500EE2932 /* AOP_TestDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 243325BC21F0D0C500EE2932 /* AOP_TestDemoTests.m */; };
 		243325C821F0D0C500EE2932 /* AOP_TestDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 243325C721F0D0C500EE2932 /* AOP_TestDemoUITests.m */; };
+		243325DB21F0D36600EE2932 /* AOPInterceptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 243325DA21F0D36600EE2932 /* AOPInterceptor.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,9 @@
 		243325C321F0D0C500EE2932 /* AOP_TestDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AOP_TestDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		243325C721F0D0C500EE2932 /* AOP_TestDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AOP_TestDemoUITests.m; sourceTree = "<group>"; };
 		243325C921F0D0C500EE2932 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		243325D921F0D36600EE2932 /* AOPInterceptor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AOPInterceptor.h; sourceTree = "<group>"; };
+		243325DA21F0D36600EE2932 /* AOPInterceptor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AOPInterceptor.m; sourceTree = "<group>"; };
+		243325DC21F0D40D00EE2932 /* AOPSingleton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AOPSingleton.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +105,7 @@
 		243325A221F0D0C200EE2932 /* AOP_TestDemo */ = {
 			isa = PBXGroup;
 			children = (
+				243325D521F0D0D400EE2932 /* AOPTool */,
 				243325A321F0D0C200EE2932 /* AppDelegate.h */,
 				243325A421F0D0C200EE2932 /* AppDelegate.m */,
 				243325A621F0D0C200EE2932 /* ViewController.h */,
@@ -130,6 +135,16 @@
 				243325C921F0D0C500EE2932 /* Info.plist */,
 			);
 			path = AOP_TestDemoUITests;
+			sourceTree = "<group>";
+		};
+		243325D521F0D0D400EE2932 /* AOPTool */ = {
+			isa = PBXGroup;
+			children = (
+				243325DC21F0D40D00EE2932 /* AOPSingleton.h */,
+				243325D921F0D36600EE2932 /* AOPInterceptor.h */,
+				243325DA21F0D36600EE2932 /* AOPInterceptor.m */,
+			);
+			path = AOPTool;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,6 +277,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				243325DB21F0D36600EE2932 /* AOPInterceptor.m in Sources */,
 				243325A821F0D0C200EE2932 /* ViewController.m in Sources */,
 				243325B321F0D0C500EE2932 /* main.m in Sources */,
 				243325A521F0D0C200EE2932 /* AppDelegate.m in Sources */,
